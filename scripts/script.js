@@ -14,7 +14,8 @@ for (let i= 0; i < boxNumber; i++) {
     }
 }
 function changeColor (e) {
-    e.target.classList.add('boxhover');
+    let randomColorHue =  Math.floor(Math.random() * 360) + 1;
+    e.target.style.backgroundColor = `hsl(${randomColorHue}, 50%, 50%)`;
 }
 function resetGrid () {
     const boxlist = document.querySelectorAll('.gridbox');
