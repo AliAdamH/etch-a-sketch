@@ -15,7 +15,7 @@ for (let i= 0; i < boxNumber; i++) {
 }
 function changeColor (e) {
     let randomColorHue =  Math.floor(Math.random() * 360) + 1;
-    e.target.style.backgroundColor = `hsl(${randomColorHue}, 50%, 50%)`;
+    e.target.style.backgroundColor = `hsl(${randomColorHue}, 100%, 50%)`;
 }
 function resetGrid () {
     const boxlist = document.querySelectorAll('.gridbox');
