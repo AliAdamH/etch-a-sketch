@@ -19,9 +19,9 @@ function resetGrid() {
 resetBtn.addEventListener('click', resetGrid);
 
 function getUserInput() {
-  const userChoice = +prompt('Enter a number: ');
+  const userChoice = +prompt('Enter a number: ') || boxNumber;
   if (userChoice < 100) {
-    customGrid(userChoice);
+    createGrid(userChoice);
   } else {
     alert("You've entered a number higher than 100");
   }
