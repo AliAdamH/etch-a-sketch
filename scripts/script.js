@@ -24,6 +24,7 @@ function getUserInput() {
     createGrid(userChoice);
   } else {
     alert("You've entered a number higher than 100");
+    createGrid(boxNumber);
   }
 }
 function createGrid(count) {
